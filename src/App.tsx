@@ -12,7 +12,7 @@ function App() {
       <main className="max-w-6xl mx-auto px-6 py-24 space-y-32">
         <section id="projects" className="space-y-12 scroll-mt-8">
           <div className="space-y-4">
-            <h2 className="text-4xl font-bold text-gray-900">Featured Projects</h2>
+            <h2 className="text-4xl font-bold text-gray-900">Projects</h2>
             <p className="text-lg text-gray-600 max-w-2xl">
               A selection of projects that showcase my skills in building modern web applications.
             </p>
