@@ -2,6 +2,12 @@ import { Github, Linkedin, Mail, MapPin, ArrowDown } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
 
 export default function Header() {
+
+  const handleNavigation = (id: string) => {
+    // setActiveSection(id);
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <header className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 via-white to-slate-50">
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:64px_64px]"></div>
@@ -36,7 +42,10 @@ export default function Header() {
               aria-label="Email"
             >
               <div className="p-2 rounded-full bg-gray-100 group-hover:bg-gray-900 transition-colors">
-                <Mail size={18} className="group-hover:text-white transition-colors" />
+                <Mail
+                  size={18}
+                  className="group-hover:text-white transition-colors"
+                />
               </div>
               <span className="text-sm font-medium">Email</span>
             </a>
@@ -48,7 +57,10 @@ export default function Header() {
               aria-label="GitHub"
             >
               <div className="p-2 rounded-full bg-gray-100 group-hover:bg-gray-900 transition-colors">
-                <Github size={18} className="group-hover:text-white transition-colors" />
+                <Github
+                  size={18}
+                  className="group-hover:text-white transition-colors"
+                />
               </div>
               <span className="text-sm font-medium">GitHub</span>
             </a>
@@ -60,20 +72,31 @@ export default function Header() {
               aria-label="LinkedIn"
             >
               <div className="p-2 rounded-full bg-gray-100 group-hover:bg-gray-900 transition-colors">
-                <Linkedin size={18} className="group-hover:text-white transition-colors" />
+                <Linkedin
+                  size={18}
+                  className="group-hover:text-white transition-colors"
+                />
               </div>
               <span className="text-sm font-medium">LinkedIn</span>
             </a>
           </div>
         </div>
 
-        <a
+        <div
+          className="absolute bottom-[-3rem] left-1/2 -translate-x-1/2 animate-bounce rounded-full border p-3 cursor-pointer"
+          aria-label="Scroll to projects"
+          onClick={() => handleNavigation('projects')}
+        >
+          <ArrowDown size={24} className="text-gray-400" />
+        </div>
+
+        {/* <a
           href="#projects"
-          className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce"
+          className="absolute bottom-[-3rem] left-1/2 -translate-x-1/2 animate-bounce rounded-full border p-3"
           aria-label="Scroll to projects"
         >
           <ArrowDown size={24} className="text-gray-400" />
-        </a>
+        </a> */}
       </div>
     </header>
   );

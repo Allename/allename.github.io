@@ -42,9 +42,9 @@ function App() {
       </main>
 
       <footer className="border-t border-gray-100 mt-32 bg-gradient-to-b from-white to-gray-50">
-        <div className="max-w-6xl mx-auto px-6 py-12">
+        <div className="max-w-6xl mx-auto px-6 py-4">
           <p className="text-center text-gray-500">
-            Designed and built with React, TypeScript, and Tailwind CSS
+            Allename Anthony
           </p>
         </div>
       </footer>
