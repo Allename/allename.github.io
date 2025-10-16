@@ -26,7 +26,7 @@ function App() {
 
         <section className="space-y-12">
           <div className="space-y-4">
-            <h2 className="text-4xl font-bold text-gray-900">Work Experience</h2>
+            <h2 className="text-[1.75rem] font-bold text-gray-900 text-center md:text-start sm:text-center md:text-4xl">Work Experience</h2>
             <p className="text-lg text-gray-600 max-w-2xl">
               My professional journey building products and solving problems.
             </p>

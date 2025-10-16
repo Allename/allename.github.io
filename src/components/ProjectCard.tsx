@@ -53,7 +53,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="px-3 py-1.5 bg-gray-100 text-gray-700 text-sm rounded-lg font-medium group-hover:bg-gray-200 transition-colors"
+              className="px-3 py-1.5 bg-gray-100 text-gray-700 text-sm rounded-full font-medium group-hover:bg-gray-200 transition-colors"
             >
               {tag}
             </span>

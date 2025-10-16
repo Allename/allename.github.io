@@ -3,7 +3,7 @@ import { skills } from '../data/portfolioData';
 export default function SkillsSection() {
   return (
     <section className="space-y-8">
-      <h2 className="text-4xl font-bold text-gray-900">Skills & Technologies</h2>
+      <h2 className="text-[1.75rem] font-bold text-gray-900 text-center md:text-start sm:text-center md:text-4xl">Skills & Technologies</h2>
       <div className="grid sm:grid-cols-2 gap-8">
         {skills.map((skillGroup, groupIndex) => (
           <div
@@ -18,7 +18,7 @@ export default function SkillsSection() {
               {skillGroup.items.map((skill, skillIndex) => (
                 <span
                   key={skill}
-                  className="px-4 py-2 bg-gradient-to-br from-gray-100 to-gray-50 text-gray-800 text-sm rounded-xl font-medium border border-gray-200 hover:border-gray-300 hover:shadow-md transition-all duration-200 animate-fade-in"
+                  className="px-4 py-2 bg-gradient-to-br from-gray-100 to-gray-50 text-gray-800 text-sm rounded-full font-medium border border-gray-200 hover:border-gray-300 hover:shadow-md transition-all duration-200 animate-fade-in"
                   style={{ animationDelay: `${(groupIndex * 100) + (skillIndex * 50)}ms`, opacity: 0 }}
                 >
                   {skill}

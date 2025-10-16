@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, MapPin, ArrowDown } from 'lucide-react';
+import { Github, Linkedin, Mail, MapPin, ArrowDown, FileText } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
 
 export default function Header() {
@@ -22,11 +22,11 @@ export default function Header() {
               </div>
             </div>
 
-            <h1 className="text-6xl sm:text-7xl md:text-8xl font-bold text-gray-900 tracking-tight text-balance leading-[0.95]">
+            <h1 className="text-[2rem] sm:text-7xl md:text-8xl font-bold text-gray-900 tracking-tight text-balance leading-[0.95]">
               {personalInfo.name}
             </h1>
 
-            <p className="text-2xl sm:text-3xl text-gray-600 font-light tracking-wide">
+            <p className="text-[1.5rem] md:text-4xl sm:text-3xl text-gray-600 font-light tracking-wide">
               {personalInfo.title}
             </p>
           </div>
@@ -47,7 +47,9 @@ export default function Header() {
                   className="group-hover:text-white transition-colors"
                 />
               </div>
-              <span className="text-sm font-medium">Email</span>
+              <span className="hidden text-sm font-medium md:block sm:block">
+                Email
+              </span>
             </a>
             <a
               href={personalInfo.github}
@@ -62,7 +64,9 @@ export default function Header() {
                   className="group-hover:text-white transition-colors"
                 />
               </div>
-              <span className="text-sm font-medium">GitHub</span>
+              <span className="hidden text-sm font-medium md:block sm:block">
+                GitHub
+              </span>
             </a>
             <a
               href={personalInfo.linkedin}
@@ -77,7 +81,26 @@ export default function Header() {
                   className="group-hover:text-white transition-colors"
                 />
               </div>
-              <span className="text-sm font-medium">LinkedIn</span>
+              <span className="hidden text-sm font-medium md:block sm:block">
+                LinkedIn
+              </span>
+            </a>
+            <a
+              href={personalInfo.resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-all duration-200"
+              aria-label="Resume"
+            >
+              <div className="p-2 rounded-full bg-gray-100 group-hover:bg-gray-900 transition-colors">
+                <FileText
+                  size={18}
+                  className="group-hover:text-white transition-colors"
+                />
+              </div>
+              <span className="hidden text-sm font-medium md:block sm:block">
+                Resume
+              </span>
             </a>
           </div>
         </div>
@@ -85,7 +108,7 @@ export default function Header() {
         <div
           className="absolute bottom-[-3rem] left-1/2 -translate-x-1/2 animate-bounce rounded-full border p-3 cursor-pointer"
           aria-label="Scroll to projects"
-          onClick={() => handleNavigation('projects')}
+          onClick={() => handleNavigation("projects")}
         >
           <ArrowDown size={24} className="text-gray-400" />
         </div>
