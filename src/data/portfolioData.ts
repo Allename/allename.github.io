@@ -48,7 +48,7 @@ export const projects: Project[] = [
   {
     title: "SATA | Security Agency Training Academy",
     description:
-      "Designed and built a customizable portfolio template for developers. Features dark mode, smooth animations, and SEO optimization.",
+      "An application that helps educate security agencies and tests their knowledge of security protocols.",
     tags: [
       "React",
       "TypeScript",
