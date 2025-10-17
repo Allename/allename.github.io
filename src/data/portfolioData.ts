@@ -13,9 +13,15 @@ export const personalInfo = {
 
 export const projects: Project[] = [
   {
+    title: "Billboxx Technologies",
+    description: "Handles all invoice-related tasks, including issue, payment, and reconciliation, for businesses of all sizes",
+    tags: ["React.js", "Styled Components", "Tailwind CSS", "Redux", "Next.js"],
+    link: "https://billboxx.com",
+  },
+  {
     title: "RoomPadi",
     description:
-      "Roommate matching platform for students and ",
+      "Roommate matching platform for students and young professionals",
     tags: ["Vue.js", "Tailwind CSS", "PrimeVue", "Pinia"],
     link: "https://roompadi.com",
   },
@@ -35,13 +41,15 @@ export const projects: Project[] = [
   },
   {
     title: "Linkcreator",
-    description: "An AI advanced software that automatically assists website owners and users to promote their articles and site content.",
+    description:
+      "An AI advanced software that automatically assists website owners and users to promote their articles and site content.",
     tags: ["React", "Next.js", "Context API", "React Query"],
     link: "https://app.linkcreator.ai",
   },
   {
     title: "Folawej Laundromat",
-    description: "World-class laundry experience with self-service facilities, coin-operated machines, and mobile app integration",
+    description:
+      "World-class laundry experience with self-service facilities, coin-operated machines, and mobile app integration",
     tags: ["React", "Ionic"],
     link: "https://folawej.com",
   },
@@ -65,6 +73,12 @@ export const projects: Project[] = [
       "A platform that connects automobile users to the nearest automobile experts.",
     tags: ["React", "JavaScript", "Tailwind CSS", "Redux"],
     link: "https://requestmechanic.com",
+  },
+  {
+    title: "Bluelight Studios",
+    description:  "Solving user problems through the use of software and technologies",
+    tags: ["React", "JavaScript", "Tailwind CSS"],
+    link: "https://www.bluelight.studio/",
   },
 ];
 
