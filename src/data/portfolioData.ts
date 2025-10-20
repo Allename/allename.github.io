@@ -19,11 +19,10 @@ export const projects: Project[] = [
     link: "https://billboxx.com",
   },
   {
-    title: "RoomPadi",
-    description:
-      "Roommate matching platform for students and young professionals",
-    tags: ["Vue.js", "Tailwind CSS", "PrimeVue", "Pinia"],
-    link: "https://roompadi.com",
+    title: "Bluelight Studios",
+    description:  "Solving user problems through the use of software and technologies",
+    tags: ["React", "JavaScript", "Tailwind CSS"],
+    link: "https://www.bluelight.studio/",
   },
   {
     title: "Cirlo",
@@ -38,6 +37,20 @@ export const projects: Project[] = [
       "React Query",
     ],
     link: "https://cirlo.io",
+  },
+  {
+    title: "Request Mechanic",
+    description:
+      "A platform that connects automobile users to the nearest automobile experts.",
+    tags: ["React", "JavaScript", "Tailwind CSS", "Redux"],
+    link: "https://requestmechanic.com",
+  },
+  {
+    title: "RoomPadi",
+    description:
+      "Roommate matching platform for students and young professionals",
+    tags: ["Vue.js", "Tailwind CSS", "PrimeVue", "Pinia"],
+    link: "https://roompadi.com",
   },
   {
     title: "Linkcreator",
@@ -66,19 +79,6 @@ export const projects: Project[] = [
       "React Query",
     ],
     link: "https://sata.com.ng",
-  },
-  {
-    title: "Request Mechanic",
-    description:
-      "A platform that connects automobile users to the nearest automobile experts.",
-    tags: ["React", "JavaScript", "Tailwind CSS", "Redux"],
-    link: "https://requestmechanic.com",
-  },
-  {
-    title: "Bluelight Studios",
-    description:  "Solving user problems through the use of software and technologies",
-    tags: ["React", "JavaScript", "Tailwind CSS"],
-    link: "https://www.bluelight.studio/",
   },
 ];
 
